@@ -3,7 +3,7 @@
 
 	<groupId>com.iwares</groupId>
 	<artifactId>qbatis</artifactId>
-	<version>0.1.0</version>
+	<version>0.2.0</version>
 	<name>qbatis</name>
 	<description>qbatis java library</description>
 	<packaging>jar</packaging>

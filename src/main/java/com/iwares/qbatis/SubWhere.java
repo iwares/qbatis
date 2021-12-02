@@ -48,8 +48,8 @@ public class SubWhere {
         wheres.add(new Where("", "", "", "", subWheres, ""));
     }
 
-    public SubWhere(Param<?> param) {
-        wheres.add(new Where("", "", "", "", param, ""));
+    public SubWhere(String column, Param<?> param) {
+        wheres.add(new Where("", "", column, "", param, ""));
     }
 
     public SubWhere and(String column, String op, Object arg) {
@@ -72,13 +72,13 @@ public class SubWhere {
         return this;
     }
 
-    public SubWhere and(Param<?> param) {
-        wheres.add(new Where("and", "", "", "", param, ""));
+    public SubWhere and(String column, Param<?> param) {
+        wheres.add(new Where("and", "", column, "", param, ""));
         return this;
     }
 
-    public SubWhere or(Param<?> param) {
-        wheres.add(new Where("or", "", "", "", param, ""));
+    public SubWhere or(String column, Param<?> param) {
+        wheres.add(new Where("or", "", column, "", param, ""));
         return this;
     }
 
