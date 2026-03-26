@@ -6,7 +6,7 @@ public interface CplxDao<DataType, KeyType> {
 
     public DataType selectCplx(KeyType id);
 
-    public List<DataType> selecCplxConditional(Condition condition);
+    public List<DataType> selectCplxConditional(Condition condition);
 
     public int countCplx(Condition condition);
 
